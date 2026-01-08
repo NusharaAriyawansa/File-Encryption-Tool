@@ -31,32 +31,36 @@ An Python application for encrypting and decrypting files with AES-256 encryptio
   chmod +x encryption_tool.py
   ```
 
-  **Step 1: Install PyCryptodome**
-    pip install pycryptodome
-
-  **Step 2: Download the Tool**
-    Save `encryption_tool.py` to your desired location
-
-  **Step 3: Make it Executable (Linux/macOS)**
-    chmod +x encryption_tool.py
-
   **Step 4: Generate a Key**
-    
-    1. Random key (recommended): 
-      python encryption_tool.py keygen -n mykey
 
-    2. Password-based key: 
-      python encryption_tool.py keygen -n mykey --password
-  
+  Choose one option:
+  ```bash
+  # Option A: Random key (recommended)
+  python encryption_tool.py keygen -n mykey
+
+  # Option B: Password-based key
+  python encryption_tool.py keygen -n mykey --password
+  ```
+
   **Step 5: Encrypt a File**
-    python encryption_tool.py encrypt -f document.pdf -k mykey
-      This creates `document.pdf.enc` (encrypted and unreadable without the key).
+  ```bash
+  python encryption_tool.py encrypt -f document.pdf -k mykey
+  ```
+
+  This creates `document.pdf.enc` (encrypted and unreadable without the key).
 
   **Step 6: Decrypt a File**
-    python encryption_tool.py decrypt -f document.pdf.enc -k mykey  
-      This restores the original `document.pdf`.
+  ```bash
+  python encryption_tool.py decrypt -f document.pdf.enc -k mykey
+  ```
+
+  This restores the original `document.pdf`.
+
 
   **Step 7: List Your Keys**
-    python encryption_tool.py listkeys
+  ```bash
+  python encryption_tool.py listkeys
+  ```
 
+  Shows all available encryption keys with creation dates.
 

@@ -27,11 +27,11 @@ An Python application for encrypting and decrypting files with AES-256 encryptio
     chmod +x encryption_tool.py
 
   **Step 4: Generate a Key**
-  
-  1) Random key (recommended)
+    
+    1. Random key (recommended): 
       python encryption_tool.py keygen -n mykey
 
-    # Option B: Password-based key
+    2. Password-based key: 
       python encryption_tool.py keygen -n mykey --password
   
   **Step 5: Encrypt a File**

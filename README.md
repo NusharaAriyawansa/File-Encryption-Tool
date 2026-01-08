@@ -18,6 +18,20 @@ An Python application for encrypting and decrypting files with AES-256 encryptio
 ## Installation
 
   **Step 1: Install PyCryptodome**
+  ```bash
+  pip install pycryptodome
+  ```
+
+  **Step 2: Download the Tool**
+
+  Save `encryption_tool.py` to your desired location.
+
+  **Step 3: Make it Executable (Linux/macOS)**
+  ```bash
+  chmod +x encryption_tool.py
+  ```
+
+  **Step 1: Install PyCryptodome**
     pip install pycryptodome
 
   **Step 2: Download the Tool**
